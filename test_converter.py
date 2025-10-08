@@ -32,4 +32,6 @@ def test_kelvin_para_fahrenheit():
     assert converter_temp.kelvin_para_fahrenheit(273.15) == 32
     assert converter_temp.kelvin_para_fahrenheit(373.15) == 212
     assert converter_temp.kelvin_para_fahrenheit(0) == -459.67
-
+    #O teste test_kelvin_para_fahrenheit falha ao comparar -459.66999999999996 com -459.67 
+    # devido a imprecisões inerentes de números de ponto flutuante no Python.
+    #  O cálculo está correto, mas a representação do float não é exata.
